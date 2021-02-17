@@ -1,0 +1,74 @@
+@import 'node_modules/bootstrap/scss/bootstrap';
+
+$bodyColor: #696d6b;
+
+body {
+  background-color: $bodyColor;
+}
+
+#pageSettings {
+  background-color: transparent;
+  /*
+  ::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+  }
+  */
+  input {
+    margin-bottom: 1em;
+    border: none;
+  }
+  table {
+    box-sizing: unset;
+    width: 100%;
+    * {
+      margin: 0.5em;
+    }
+    thead,
+    tbody,
+    tr,
+    td,
+    th {
+      display: block;
+      border: none;
+    }
+    thead > tr > th {
+      float: left;
+      position: relative;
+      &::after {
+        content: "";
+        clear: both;
+        display: block;
+      }
+    }
+    tbody {
+      height: 300px;
+      overflow-y: auto;
+      width: 100%;
+      td,
+      th {
+        float: left;
+        position: relative;
+        &::after {
+          content: "";
+          clear: both;
+          display: block;
+        }
+      }
+    }
+  }
+  .btn {
+    height: 8em;
+    width: 8em;
+    font-size: 1em;
+    font-size-adjust: 1;
+    border-radius: 20rem;
+    color: black;
+    max-width: 8em;
+    max-height: 8em;
+    margin: 1em;
+  }
+  .btn-lg {
+    border-radius: 10rem;
+  }
+}
